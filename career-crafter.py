@@ -50,8 +50,9 @@ while phone_section:
     else:
         phone_section = False
 
-print("\nSummary:")
-print("Fullname:", first_name, surname)
-print("Age:", age)
-print("Email:", email)
-print("Phone:", phone_no)
+if int(age) >= 19:
+    print("\nSummary:")
+    print("Fullname:", first_name, surname)
+    print("Age:", age)
+    print("Email:", email)
+    print("Phone:", phone_no)
