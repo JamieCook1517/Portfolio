@@ -47,10 +47,18 @@ while email_section:
 
 while phone_section:
     phone_no = input("Enter your phone number: ")
-    if len(phone_no) != 10 or not phone_no.isdigit():  # Numbers only
-        print("Invalid phone number. \n")
-    else:
-        phone_section = False
+    if phone_no[:2] == '07':
+        if phone_no.isdigit() and len(phone_no) == 11:
+            phone_section = False
+        else:
+            print('Invalid phone number.\n')
+    elif phone_no[:3] == '+44':
+        if phone_no[1:].isdigit() and len(phone_no) == 13:
+            phone_section = False
+        else:
+            print('Invalid phone number.\n')
+    else:  # For anything else
+        print('Invalid phone number.\n')
 
 if int(age) >= 19:  # Blocked by if condition to prevent NameError
     print("\nSummary:")
