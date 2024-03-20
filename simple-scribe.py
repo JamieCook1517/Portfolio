@@ -7,7 +7,7 @@ document = []
 
 while True:
 
-    text = input(f"{font_off}\nEnter your text (Type /document to print current document, /clear to empty document, /undo to delete last text): ")
+    text = input(f"{font_off}\nEnter your text (Type /document to print current document, /clear to empty document, /undo to delete last text)\n")
     
     if text == "/quit":
         break
