@@ -14,7 +14,7 @@ while True:
 
     if text == "/document":
         if len(document) > 0:  # If document is not empty
-            current_document = "\n".join(document)
+            current_document = ''.join(document)
             print()  # Newline
             print(current_document)
         continue
@@ -28,28 +28,33 @@ while True:
             del document[-1]
         continue
 
+    if text == '':
+        document.append(f'\n')
+        print('(Newline added)')
+        continue
+
     action = input("Enter your action for the text (upper, bold, underline, italics, replace, colour): ")
     
     if action == "/quit":
         break
 
     elif action.lower().strip() == "upper":
-        upper_text = f"{font_off}{text.upper()}"  # Text not affected by other fonts
+        upper_text = f"{text.upper()} " # Extra space for joining document together
         document.append(upper_text)
         print(upper_text)
     
     elif action.lower().strip() == "bold":
-        bold_text = f"{font_off}\033[1m{text}"
+        bold_text = f"\033[1m{text}{font_off} " # Text not affected by other fonts
         document.append(bold_text)
         print(bold_text)
     
     elif action.lower().strip() == "underline":
-        underline_text = f"{font_off}\033[4m{text}"
+        underline_text = f"\033[4m{text}{font_off} "
         document.append(underline_text)
         print(underline_text)
     
     elif action.lower().strip() == "italics":
-        italics_text = f"{font_off}\033[3m{text}"
+        italics_text = f"\033[3m{text}{font_off} "
         document.append(italics_text)
         print(italics_text)
 
@@ -60,7 +65,7 @@ while True:
         new_bit = input("Enter text that you want it replaced by: ")
         if new_bit == "/quit":
             break
-        replacement_text = f"{font_off}{text.replace(old_bit, new_bit)}"
+        replacement_text = f"{text.replace(old_bit, new_bit)}{font_off} "
         document.append(replacement_text)
         print(replacement_text)
     
@@ -71,14 +76,14 @@ while True:
         colours = ["black", "red", "green", "yellow", "blue", "magenta", "cyan"]
         colour_edit = colour.lower().strip()
         if colour_edit in colours:
-            colour_text = f"{font_off}\033[3{colours.index(colour_edit)}m{text}"
+            colour_text = f"\033[3{colours.index(colour_edit)}m{text}{font_off} "
             document.append(colour_text)
             print(colour_text)
         else:
             print("Invalid colour")
     
     elif action == '':  # No action
-        nothing_text = f"{font_off}{text}"
+        nothing_text = f"{text} "
         document.append(nothing_text)
         print(nothing_text)
     
