@@ -22,17 +22,17 @@ Here are some explanations of usage for each of the following projects *(in chro
 
 A basic program which asks you to type in your name, surname, age, email adress and phone number and then summarises them. Nothing much else to say about it. It is meant to be a work which shows defensive error-handling skills.
 
-![CareerCrafter Image](career-crafter_image.png)
+![CareerCrafter Image](images/career-crafter_image.png)
 
 ### SimpleScribe
 
 A text manipulator which edits text inputted by the user in various styles such as bold, underline and colour and saves it to a document.
 
-![SimpleScribe Image 1](simple-scribe_image1.png)
+![SimpleScribe Image 1](images/simple-scribe_image1.png)
 
 The document will store every input of text that you have entered during your run of the program, each text separated by a space. You can undo the previous text or clear the entire document. You can store them in paragraphs by entering nothing in the 'Enter your text' prompt which adds newlines. You can make your text plain by entering nothing in the 'Enter your action' prompt.
 
-![SimpleScribe Image 2](simple-scribe_image2.png)
+![SimpleScribe Image 2](images/simple-scribe_image2.png)
 
 ### Scrabble Calculator
 
@@ -41,8 +41,6 @@ This program asks the user to type in input and calculates the points total in E
 You can add bonus scores (i.e. double letter, double word, etc.) by typing in the corresponding command before typing in your word that you wish to be calculated through your chosen bonus.
 
 ![Scrabble Calulator Image](images/scrabble_calculator_image.png)
-
-### Vehicle Dashboard
 
 ## Credits
 
