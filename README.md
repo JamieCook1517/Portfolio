@@ -1,2 +1,2 @@
-# portfolio
-portfolio of work at CoGrammar
+# Portfolio
+Portfolio of work at CoGrammar.
