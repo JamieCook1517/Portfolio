@@ -24,6 +24,16 @@ A basic program which asks you to type in your name, surname, age, email adress 
 
 ![CareerCrafter Image](career-crafter_image.png)
 
+### SimpleScribe
+
+A text manipulator which edits text inputted by the user in various styles such as bold, underline and colour and saves it to a document.
+
+![SimpleScribe Image 1](simple-scribe_image1.png)
+
+The document will store every input of text that you have entered during your run of the program, each text separated by a space. You can undo the previous text or clear the entire document. You can store them in paragraphs by entering nothing in the 'Enter your text' prompt which adds newlines. You can make your text plain by entering nothing in the 'Enter your action' prompt.
+
+![SimpleScribe Image 2](simple-scribe_image2.png)
+
 ## Credits
 
 * JamieCook1517
