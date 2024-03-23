@@ -40,7 +40,9 @@ This program asks the user to type in input and calculates the points total in E
 
 You can add bonus scores (i.e. double letter, double word, etc.) by typing in the corresponding command before typing in your word that you wish to be calculated through your chosen bonus.
 
-![Scrabble Calulator Image](scrabble_calculator_image.png)
+![Scrabble Calulator Image](images/scrabble_calculator_image.png)
+
+### Vehicle Dashboard
 
 ## Credits
 
