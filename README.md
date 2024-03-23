@@ -66,7 +66,7 @@ For those unfamiliar with Battleships it is a turn-based game where the objectiv
 
 During the game there are also commands such as '/status' which checks your remaining ships' coordinates, '/gridscan' which displays the coordinates that you have not yet used and '/check' which shows the number of yours and your opponent's ships.
 
-You can also save a game with the '/save' command and you will be able to load it in the first input of the co-ordinate selection menu.
+You can also save a game with the '/save' command and you will be able to load it in the first input of the co-ordinate selection menu. **Remember to have your terminal in the same directory as this program** as textfiles will be used for saved files.
 
 A program which was shown during a CoGrammar portfolio session and liked by its staff, it is a recommended portfolio project.
 
