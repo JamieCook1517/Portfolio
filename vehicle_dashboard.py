@@ -347,4 +347,3 @@ while True:
         current_location = driver_data['location']
         save_progress(*driver_data.values())
         break
-
