@@ -34,6 +34,14 @@ The document will store every input of text that you have entered during your ru
 
 ![SimpleScribe Image 2](simple-scribe_image2.png)
 
+### Scrabble Calculator
+
+This program asks the user to type in input and calculates the points total in English Scrabble.
+
+You can add bonus scores (i.e. double letter, double word, etc.) by typing in the corresponding command before typing in your word that you wish to be calculated through your chosen bonus.
+
+![Scrabble Calulator Image](scrabble_calculator_image.png)
+
 ## Credits
 
 * JamieCook1517
