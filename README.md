@@ -72,6 +72,18 @@ A program which was shown during a CoGrammar portfolio session and liked by its 
 
 ![Battleships Image 3](images/battleships_image3.png)
 
+### Musical Instruments
+
+My latest portfolio project which specialises in my heritage and origination as a music-based student and will also have updates and new content in the coming months.
+
+This program is a software which displays texts of the sounds of various musical instruments that are built using Object-Oriented Programming (OOP). With the program you can stage many possible combinations of text sounds and save them into a document, drafting rough ideas for a real-life music composition/piece.
+
+Composition has taken its journey from its roots to now endless possibilities. The basic assumption of it would be the simple melodies like from Beethoven, but today music compostitions are about sound taking its freedom and going wherever it wants. The software instigates and sketches the randomness and improvisation of strings, brass, a piano and more (an electric guitar too), which plans out a composition of a modern compositional genre.  
+
+![Musical Instruments Image](images/musical_instruments_image.png)
+
+You can change the order of the playing instruments on the display as well as saving a draft of sound sections as a name of your choice and loading an existing draft. Whichever instruments are currently playing you can open a Musical Instruments textfile and save the current sound texts onto that textfile, giving you flexibility on creating drafts. 
+
 ## Credits
 
 * JamieCook1517
