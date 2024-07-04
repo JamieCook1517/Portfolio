@@ -33,23 +33,8 @@ with open('shipments_files.txt', 'r') as file:  # Adds the files for use during 
     for line in file:
         files.append(line.strip('\n'))
 
-for shipment_file in files:  # In case files on shipments_files.txt do not exist in directory
-    if not os.path.exists(shipment_file):
-        files.remove(shipment_file)
-
-for shipment_file in files:  # In case files on shipments_files.txt do not exist in directory
-    try:
-        with open(shipment_file, 'r') as file:
-            pass
-    except FileNotFoundError:
-        files.remove(shipment_file)
-
-for shipment_file in files:  # In case files on shipments_files.txt do not exist in directory
-    try:
-        with open(shipment_file, 'r') as file:
-            pass
-    except FileNotFoundError:
-        files.remove(shipment_file)
+files = [shipment_file for shipment_file in files if os.path.exists(shipment_file)]
+# In case files on shipments_files.txt do not exist in directory
 
 if not 'shipments_initial.txt' in files and len(files) == 0:  # Special case upon an action outside of program
     files.append('shipments_initial.txt')
