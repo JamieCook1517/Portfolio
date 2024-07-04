@@ -37,6 +37,20 @@ for shipment_file in files:  # In case files on shipments_files.txt do not exist
     if not os.path.exists(shipment_file):
         files.remove(shipment_file)
 
+for shipment_file in files:  # In case files on shipments_files.txt do not exist in directory
+    try:
+        with open(shipment_file, 'r') as file:
+            pass
+    except FileNotFoundError:
+        files.remove(shipment_file)
+
+for shipment_file in files:  # In case files on shipments_files.txt do not exist in directory
+    try:
+        with open(shipment_file, 'r') as file:
+            pass
+    except FileNotFoundError:
+        files.remove(shipment_file)
+
 if not 'shipments_initial.txt' in files and len(files) == 0:  # Special case upon an action outside of program
     files.append('shipments_initial.txt')
     with open('shipments_files.txt', 'w') as file:
@@ -96,6 +110,9 @@ while select_textfile_menu:
         print(*files, sep=', ')
         excluded_file = input()
         mod_excluded_file = excluded_file + '.txt' if excluded_file[-4:] != '.txt' else excluded_file
+        if not mod_excluded_file in files:
+            print('\nSorry. Unrecognised file typed.')
+            continue
         yes_or_no = input('This selected file will no longer be available for editing/analysing. Are you sure you want to do this? (Y/n): ')
         if yes_or_no == 'Y':
             files.remove(mod_excluded_file)
@@ -362,6 +379,8 @@ while select_textfile_menu:
 
     except FileNotFoundError:
         print("\nError: File was not found. Make sure it is in directory of this file.")
+    except Exception:
+        print('\nYour selected file does not appear to be in the correct format.')
     finally:
         if textfile == '/quit':
             break
