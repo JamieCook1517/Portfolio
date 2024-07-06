@@ -74,7 +74,7 @@ A program which was shown during a CoGrammar portfolio session and liked by its 
 
 ### Musical Instruments
 
-My latest portfolio project which specialises in my heritage and origination as a music-based student and will also have updates and new content in the coming months.
+A portfolio project which specialises in my heritage and origination as a music-based student and will also have updates and new content in the coming months.
 
 This program is a software which displays texts of the sounds of various musical instruments that are built using Object-Oriented Programming (OOP). With the program you can stage many possible combinations of text sounds and save them into a document, drafting rough ideas for a real-life music composition/piece.
 
@@ -83,6 +83,28 @@ Composition has taken its journey from its roots to now endless possibilities. T
 ![Musical Instruments Image](images/musical_instruments_image.png)
 
 You can change the order of the playing instruments on the display as well as saving a draft of sound sections as a name of your choice and loading an existing draft. Whichever instruments are currently playing you can open a Musical Instruments textfile and save the current sound texts onto that textfile, giving you flexibility on creating drafts. 
+
+### Shipment Handler
+
+The 7th project of the portfolio which handles with shipment orders, with the ability to analyse or edit orders of a selected list and to create new lists of orders also available for handling.
+
+Like operating on a system of an online shopping platform, the user can select a shipment order and change its status on whether the shipment has been delivered and can also reiterate the order, updating either its location to which it is being sent or its product type.
+
+![Shipment Handler Image 1](images/shipment_handler_image1.png)
+
+The above image showcases a welcome message to the software followed by a menu prompting the user to type in one of the available shipment files it has listed. Doing this will direct the user into the file and enable them to view/manipulate shipment orders from the list.
+
+The opening menu also provides certain commands such as /new and /exclude. The /new command is what is used for the user to create new files of shipment orders. Once this command is typed the program will ask the user to type in the number of shipment orders in the file, the location to which the orders will be delivered, the product type of the orders and finally the file name. The file with those details will then be generated, setting the date for every order to today's date with status marked as placed. The /exclude command enables the user to delete a shipment file so that it will no longer be available for the user to go into, but it will not be removed from the directory that it is in.
+
+![Shipment Handler Image 2](images/shipment_handler_image2.png)
+
+The second image above sees the user in a menu of dealing with shipment orders of a selected file. Here the user is given multiple options on what to do in this part of the program. One is the analyse option which lets the user read shipment orders from the file on the terminal in a well-presented way, being either a group of shipments (every shipment or a selected range) or just a single shipment to view. The edit option enables the user to either change the status of a shipment order, stepping up its delivery journey, or update the order, reassigning it with a different location or order type.
+
+There is also a filter option which allows the user to shorten the list of shipment orders and handle with only the orders with the specific part that the user wants. The user is given four different filters: date, order status, location and order type. Using them will grant the user only the shipment orders with the information that the user has chosen, such as looking for only the orders that are place (shown in below image, filtering the list of ***shipments_initial.txt***) and searching for orders delivered to a chosen location. Analyses, edits and further filters will then be used on this filtered list and the user will have to use the reset option to go back to handling the original list. 
+
+![Shipment Handler Image 3](images/shipment_handler_image3.png)
+
+The program stages a fluent way of managing shipment orders and files in various methods and uses the techniques of creating user-defined functions and interpreting with input and output from textfiles, making the user an operator of an unautomated ordering system (e.g. Amazon, Deliveroo, etc.)
 
 ## Credits
 
